@@ -102,10 +102,16 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="什么是Java泛型通配符？"><a href="#什么是Java泛型通配符？" class="headerlink" title="什么是Java泛型通配符？"></a>什么是Java泛型通配符？</h3><ul>
+        <blockquote>
+<p>  转载自知乎：Java 泛型 &lt;? super T&gt; 中 super 怎么 理解？与 extends 有何不同？ - 胖君的回答 - 知乎 <a href="https://www.zhihu.com/question/20400700/answer/117464182" target="_blank" rel="noopener">https://www.zhihu.com/question/20400700/answer/117464182</a></p>
+</blockquote>
+<h3 id="什么是Java泛型通配符？"><a href="#什么是Java泛型通配符？" class="headerlink" title="什么是Java泛型通配符？"></a>什么是Java泛型通配符？</h3><ul>
 <li><code>&lt;? extends T&gt;</code> 上届通配符（Upper Bounds Wildcards）</li>
 <li><code>&lt;? super T&gt;</code> 下届通配符（Lower Bounds Wildcards）</li>
 </ul>
+<h3 id="为什么要用通配符和边界？"><a href="#为什么要用通配符和边界？" class="headerlink" title="为什么要用通配符和边界？"></a>为什么要用通配符和边界？</h3><p>假设我们有一个容器——碟子<code>Pl</code>类，我们在上边可以放置若干继承自<code>Fruit</code>类的水果，如<code>Apple</code>，碟子的定义如下:</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Pl</span>&lt;<span class="title">T</span>&gt; </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> T item;</span><br><span class="line">    <span class="comment">// get set 方法</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Pl</span><span class="params">(T t)</span> </span>&#123;item = t;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
